@@ -1,6 +1,6 @@
 {
   "name": "Equal Twitter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "Equality for all in Twitter. Either everyone verified or everyone unverified. No in-between.",
   "icons": {

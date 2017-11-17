@@ -3,6 +3,7 @@ body {
   font-family: Segoe UI, Helvetica, Arial, sans-serif;
   font-size: 14px;
   min-width: 240px;
+  color: #363636;
 }
 
 .main {
@@ -10,11 +11,38 @@ body {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.1em;
+  margin: 0;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
-.btn {
-  border: none;
+.button {
+  border: 1px solid;
+  border-radius: 100px;
+  box-shadow: none;
   cursor: pointer;
-  border-radius: 4px;
+  line-height: 20px;
+  padding: 4px 12px;
+  text-align: center;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button-main {
+  border-color: #48aae6;
+  color: #48aae6;
+}
+
+.button-main:hover {
+  color: #fff;
+  border-color: #1b95e0;
+  background: #1b95e0;
+}
+
+.button-muted {
+  border-color: #66757f;
+  color: #66757f;
 }
