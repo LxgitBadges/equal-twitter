@@ -1,0 +1,31 @@
+{
+  "name": "YTBadge",
+  "version": "0.0.2",
+  "manifest_version": 2,
+  "description": "YT badge free",
+  "icons": {
+    "16": "https://lh3.googleusercontent.com/RmVetI8XvRRAPd1MrRKPzBukDteYp8C4RSbJOtNchoNxTEJIAwZtUZCg-teFDH8zZKw=h18",
+    "48": "https://lh3.googleusercontent.com/RmVetI8XvRRAPd1MrRKPzBukDteYp8C4RSbJOtNchoNxTEJIAwZtUZCg-teFDH8zZKw=h18",
+    "128": "https://lh3.googleusercontent.com/RmVetI8XvRRAPd1MrRKPzBukDteYp8C4RSbJOtNchoNxTEJIAwZtUZCg-teFDH8zZKw=h18"
+  },
+  "browser_action": {
+    "default_icon": "https://lh3.googleusercontent.com/RmVetI8XvRRAPd1MrRKPzBukDteYp8C4RSbJOtNchoNxTEJIAwZtUZCg-teFDH8zZKw=h18",
+    "default_title": "YTBadge",
+    "default_popup": "src/browser_action/popup.html"
+  },
+  "permissions": [
+    "https://*.youtube.com/*",
+    "storage",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.youtube.com/*"
+      ],
+      "js": [
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}
